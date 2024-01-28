@@ -1,0 +1,36 @@
+{
+  "name": "leorlik/package-l",
+  "description": "date convert, memory translate, Str test",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "LeorlikK",
+      "email": "leorl1k@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leorlik\\PackageL\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "Leorlik\\PackageL\\Test\\": "tests/"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Leorlik\\PackageL\\LeorlikServiceProvider"
+      ],
+      "aliases": {
+        "LeorlikFacade": "Leorlik\\PackageL\\LeorlikFacade"
+      }
+    }
+  }
+}
