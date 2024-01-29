@@ -17,7 +17,8 @@ class LeorlikServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/../config/leorlik.php' => config_path('leorlik.php'),
-        ]);
+        ], 'main-config');
+
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
 
@@ -28,5 +29,7 @@ class LeorlikServiceProvider extends ServiceProvider
         );
 
         $this->app->bind(StrService::class);
+        $this->app->bind(DateService::class);
+        $this->app->bind(MediaSizeService::class);
     }
 }

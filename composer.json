@@ -32,5 +32,6 @@
         "LeorlikFacade": "Leorlik\\PackageL\\LeorlikFacade"
       }
     }
-  }
+  },
+  "version": "1.0.0"
 }
